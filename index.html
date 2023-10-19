@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOHLER - CHATBOT E-PRO</title>
+    <Link rel="stylesheet" href="style.css"/>
+    <Link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <script src="script.js" href></script>
+</head>
+<body class="show-chatbot">
+    <div class="layout">
+        <img src="img/kohler.svg">
+    </div>
+    <div class="kohlerimg">
+         <img src="img/kohler_compras.svg">
+    </div>
+    <div class="kohlerpro">
+        <img src="img/e-pro.svg">
+    </div>
+   <div class="line_k">
+    <img src="img/line.svg">
+    </div>
+    <button class="chatbot-toggler">
+        <span class="material-symbols-outlined">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbot">
+        <header>
+            <h2>Chatbot</h2>
+            <span class="material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p><strong>Olá, eu sou o assistente virtual da Kohler!</strong><br><br> Selecione abaixo as opções disponíveis: <br><br>
+                    1. Cadastro no E-Pro <br>
+                    2. Atualização de cadastro do E-Pro <br> 
+                    3. Cancelar cadastro no E-Pro <br>
+                    4. Solicitar ajuda do time de compras</p>
+            </li>
+            <li class="chat outgoing">
+                <p>1</p>
+            </li>
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p><strong>Muito bem!</strong><br><br>
+                    Vamos iniciar seu cadastro acessando o E-Pro: <br><br><strong>clique no link:</strong>
+                    <a href="https://app11.jaggaer.com/portal/kohlerco/register.php?crm_person_id=Mzg3NjE4NA==-cd5c9c08697aa53422b248785a07a487&I=por">E-PRO</a>
+                    <br><br> 
+                    Preencha suas informações básicas como: Razão social, endereço completo, nome e contato da empresa. Será solicitado a criação de um nome de usuário.
+                    <br><br>Quando finalizado, me dê um OK! 
+                </p>
+            </li>
+            <li class="chat outgoing">
+                <p>OK!</p>
+            </li>
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>Verifique se recebeu um email contendo seu nome de usuário criado anteriormente, e uma senha provisória.<br><br>
+                    1. Já recebi<br>
+                    2. Não recebi
+                </p>
+            </li>
+            <li class="chat outgoing">
+                <p>1</p>
+            </li>
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p><strong>É hora de criar uma senha! </strong><br><br>Por conta de tradução a senha, estará descrita como "Palavra passe", podendo gerar confusão em alguns fornecedores. Mas fique tranquilo!<br>
+                   Palavra passe antiga, é a enviada no e-mail; Então você deverá criar uma nova senha que deverá conter: mínimo de 8 caracteres, letra maiúscula, letra minúscula, número, caracter especial. <br><br>
+                   Ao digitar a nova senha e confirmar, você automaticamente será direcionado ao portal da Kohler! <br><br> Olha Que legal!
+                </p>
+            </li><br>
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>Se tudo deu certo, você deve estar nesta página com a tarja vermelha na parte superior:<br><br> 
+                    Você deve clicar na tarja vermelha para completar a segunda parte do cadastro.<br><br>Assim que acessar me avise!<br><br>
+                    1. Consegui acessar<br>
+                    2. Estou com dificuldade
+                </p>
+            </li>
+            <li class="chat outgoing">
+                <p>1</p>
+            </li>
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p><strong>Vamos prosseguir então!</strong><br><br>
+                    A primeira aba refere-se aos dados da empresa, geralmente estes campos vem preenchidos automaticamente baseado nos dados já preenchidos anteriormente, porém é sempre importante conferir as informações e completar o que for necessário. <br><br>
+                    Já estava me esquecendo!<br><br><strong>Preencha somente os dados obrigatórios</strong>, marcados com um sinal de asteristico, pois alguns dados são exclusivos para outros países.
+                </p>
+            </li>
+            <div class="chat-input">
+                <textarea placeholder="Insira uma mensagem..."></textarea>
+                <span id="send-btn" class="material-symbols-outlined">send</span>
+            </div>
+        </ul>
+    </div>
+</body>
+</html>
