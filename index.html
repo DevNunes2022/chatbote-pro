@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KOHLER - CHATBOT E-PRO</title>
-    <Link rel="stylesheet" href="style.css"/>
-    <Link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
-    <script src="script.js" href></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOHLER E-PRO - Cadastro</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
-<body class="show-chatbot">
+<body>
+  <div class="basic">
     <div class="layout">
         <img src="img/kohler.svg">
     </div>
@@ -21,80 +20,109 @@
    <div class="line_k">
     <img src="img/line.svg">
     </div>
-    <button class="chatbot-toggler">
-        <span class="material-symbols-outlined">mode_comment</span>
-        <span class="material-symbols-outlined">close</span>
-    </button>
-    <div class="chatbot">
-        <header>
-            <h2>Chatbot</h2>
-            <span class="material-symbols-outlined">close</span>
-        </header>
-        <ul class="chatbox">
-            <li class="chat incoming">
-                <span class="material-symbols-outlined">smart_toy</span>
-                <p><strong>Olá, eu sou o assistente virtual da Kohler!</strong><br><br> Selecione abaixo as opções disponíveis: <br><br>
-                    1. Cadastro no E-Pro <br>
-                    2. Atualização de cadastro do E-Pro <br> 
-                    3. Cancelar cadastro no E-Pro <br>
-                    4. Solicitar ajuda do time de compras</p>
-            </li>
-            <li class="chat outgoing">
-                <p>1</p>
-            </li>
-            <li class="chat incoming">
-                <span class="material-symbols-outlined">smart_toy</span>
-                <p><strong>Muito bem!</strong><br><br>
-                    Vamos iniciar seu cadastro acessando o E-Pro: <br><br><strong>clique no link:</strong>
-                    <a href="https://app11.jaggaer.com/portal/kohlerco/register.php?crm_person_id=Mzg3NjE4NA==-cd5c9c08697aa53422b248785a07a487&I=por">E-PRO</a>
-                    <br><br> 
-                    Preencha suas informações básicas como: Razão social, endereço completo, nome e contato da empresa. Será solicitado a criação de um nome de usuário.
-                    <br><br>Quando finalizado, me dê um OK! 
-                </p>
-            </li>
-            <li class="chat outgoing">
-                <p>OK!</p>
-            </li>
-            <li class="chat incoming">
-                <span class="material-symbols-outlined">smart_toy</span>
-                <p>Verifique se recebeu um email contendo seu nome de usuário criado anteriormente, e uma senha provisória.<br><br>
-                    1. Já recebi<br>
-                    2. Não recebi
-                </p>
-            </li>
-            <li class="chat outgoing">
-                <p>1</p>
-            </li>
-            <li class="chat incoming">
-                <span class="material-symbols-outlined">smart_toy</span>
-                <p><strong>É hora de criar uma senha! </strong><br><br>Por conta de tradução a senha, estará descrita como "Palavra passe", podendo gerar confusão em alguns fornecedores. Mas fique tranquilo!<br>
-                   Palavra passe antiga, é a enviada no e-mail; Então você deverá criar uma nova senha que deverá conter: mínimo de 8 caracteres, letra maiúscula, letra minúscula, número, caracter especial. <br><br>
-                   Ao digitar a nova senha e confirmar, você automaticamente será direcionado ao portal da Kohler! <br><br> Olha Que legal!
-                </p>
-            </li><br>
-            <li class="chat incoming">
-                <span class="material-symbols-outlined">smart_toy</span>
-                <p>Se tudo deu certo, você deve estar nesta página com a tarja vermelha na parte superior:<br><br> 
-                    Você deve clicar na tarja vermelha para completar a segunda parte do cadastro.<br><br>Assim que acessar me avise!<br><br>
-                    1. Consegui acessar<br>
-                    2. Estou com dificuldade
-                </p>
-            </li>
-            <li class="chat outgoing">
-                <p>1</p>
-            </li>
-            <li class="chat incoming">
-                <span class="material-symbols-outlined">smart_toy</span>
-                <p><strong>Vamos prosseguir então!</strong><br><br>
-                    A primeira aba refere-se aos dados da empresa, geralmente estes campos vem preenchidos automaticamente baseado nos dados já preenchidos anteriormente, porém é sempre importante conferir as informações e completar o que for necessário. <br><br>
-                    Já estava me esquecendo!<br><br><strong>Preencha somente os dados obrigatórios</strong>, marcados com um sinal de asteristico, pois alguns dados são exclusivos para outros países.
-                </p>
-            </li>
-            <div class="chat-input">
-                <textarea placeholder="Insira uma mensagem..."></textarea>
-                <span id="send-btn" class="material-symbols-outlined">send</span>
-            </div>
-        </ul>
+</div>
+
+<div class="border">
+  <h2>Chatbot</h2>
+</div>
+
+  <div class="chat-container">
+    <div id="message-container">
+      <div class="message bot-message">
+        <p>Olá, seja bem-vindo ao cadastro <strong>KOHLER</strong>. Para se tornar fornecedor registrado, você precisará concluir o processo de registro na plataforma de gerenciamento de fornecedores (SMP). <br><br> Um colaborador de compras da Kohler lhe enviará um convite para o registro. O e-mail virá do Departamento de Compras Globais da Kohler no-reply@app11.jaggaer.com <br><br> Digite uma das opções para que possamos auxíliar você no processo de cadastro no E-Pro: <br><br> 1. Criação de Login <br> 2. Geração de Senha <br> 3. Informações Fiscais <br> 4. Dados Bancários</p>
+      </div>
     </div>
+
+    <div class="input-container">
+      <input type="text" id="user-input" placeholder="Digite sua mensagem...">
+    </div>
+    
+  </div>
+  <script>
+
+    var container = document.querySelector('.chat-container');
+setTimeout(function() {
+  container.scrollTop = container.scrollHeight;
+}, 100);
+    // Lógica de programação em JavaScript
+const messageContainer = document.getElementById('message-container');
+const userInput = document.getElementById('user-input');
+
+function addUserMessage(message) {
+  const messageElement = document.createElement('div');
+  messageElement.classList.add('message', 'user-message');
+  messageElement.innerHTML = `<p>${message}</p>`;
+  messageContainer.appendChild(messageElement);
+}
+
+function addBotMessage(message) {
+  const messageElement = document.createElement('div');
+  messageElement.classList.add('message', 'bot-message');
+  messageElement.innerHTML = `<p>${message}</p>`;
+  messageContainer.appendChild(messageElement);
+}
+
+function processUserInput() {
+  const userMessage = userInput.value;
+  addUserMessage(userMessage);
+  userInput.value = '';
+
+  // Processar a mensagem do usuário e gerar uma resposta do bot
+  const botMessage = generateBotResponse(userMessage);
+  addBotMessage(botMessage);
+}
+
+function generateBotResponse(userMessage) {
+  // Definir um fluxo de respostas do bot baseado nas respostas do usuário 
+
+  let botMessage = '';
+  if (userMessage.includes('1') || userMessage.includes('1') || userMessage.includes('1')) {
+    botMessage = '<strong>Criação de Login</strong> <br><br> Muito bem, vamos falar sobre criação de login! <br><br> Escreva uma das opções a seguir para te orientarmos: <br><br> - idioma <br> - Informações gerais <br> - Aba empresa <br> - Termos <br><br> Digite "5" para retornar ao Menu';
+  } else if (userMessage.includes('2') || userMessage.includes('2')) {
+    botMessage = '<strong>Geração de Senha</strong> <br><br> Muito bem, vamos te ajudar com relação a geração de senha. Após concluir a primeira etapa, você receberá um email com login e senha temporário. <br><br> Clique no link enviado no seu email para acessar o portal, e continuar seu registro. Coloque a senha temporária que recebeu no e-mail e crie uma nova senha seguindo algumas instruções a seguir: <br><br> -Não é uma das últimas 3 palavras-passes <br> -Mínimo de 8 caracteres <br> -Mínimo de 1 caracteres especiais (não A-Z ou a-z ou 0-9) <br> -Mínimo de 1 número <br> -Mínimo de 1 letra maiúscula e 1 letra minúscula <br><br> Digite "5" para retornar ao Menu principal';
+  } else if (userMessage.includes('3') || userMessage.includes('3')) {
+    botMessage = '<strong>Informações Fiscais</strong> <br><br> Legal, você deve ter acesso ao SMP Dashboard, para contínuar clique na tarja vermelha, no icone de seta localizado na parte superior do paínel. Revise as informações na guia "Data" que você forneceu anteriormente e faça as correções necessárias. <br><br> Use o botão "Continue" (Continuar) no canto superior direito para passar para próxima fase. <br> Caso não tenha chegado a esta página, verifique se os passos anteriores foram concluídos corretamente. <br> Te ajudarei a preencher os dados de informações fiscais, Escreva uma das opções a seguir: <br><br> - Geral <br> - Imposto <br> - Negócios <br> - Certificações <br><br> Digite "5" para retornar ao Menu principal.';
+  } else if (userMessage.includes('4') || userMessage.includes('4')) {
+    botMessage = '<strong>Dados Bancários</strong> <br><br> Após publicar o seu perfil, o seu cadastro irá passar por algumas aprovações internas e posteriormente você receberá um email solicitando as informações bancárias. Esta é a última etapa do cadastro, e deverá ser preenchida corretamente, para não ter problemas de pagamentos futuros. <br><br> Digite <strong>"Enter"</strong> para prosseguimos.';
+  } else if (userMessage.includes('5') || userMessage.includes('5')) {
+    botMessage = 'Digite uma das opções para que possamos auxíliar você no processo de cadastro no E-Pro: <br><br> 1. Criação de Login <br> 2. Geração de Senha <br> 3. Informações Fiscais <br> 4. Dados Bancários';
+  } else if (userMessage.includes('Enter') || userMessage.includes('enter')) {
+    botMessage = '<strong>Dados Bancários</strong> <br><br> O link que você recebeu no seu e-mail, levará diretamente aos dados bancários; No entanto, se o link não funcionar, faça login em nosso portal de fornecedores e clique na ordem indicada do seguinte fluxo: Documentos > Boletos > Todos os boletos > Número do boleto. <br><br> Após acessar a página para preenchimento dos dados bancários, deverá preencher os dados bancários do fornecedor incluindo o número do dígito e não inserir simbolos. <br> Preencha a forma de pagamento desejada, via transferência bancária ou boleto. <br> Em seguida, o campo de "Unidade Monetária", deverá ser preenchido como: "Brazilian real / BRL" <br> Obs: Preencher todos os campos marcados com ASTERÍSCO, nem todos os campos obrigatórios estão destacados em amarelo, porém contém o ASTERÍSCO. <br><br> Digite <strong>"Prosseguir"</strong> para continuar.'; 
+  } else if (userMessage.includes('Prosseguir') || userMessage.includes('prosseguir')) {
+    botMessage = '<strong>Dados Bancários</strong> <br><br> Vamos falar sobre endereço do fornecedor. Selecione por gentileza a opção "SIM" ou "NÃO", se o CNPJ que está sendo cadastrado é o mesmo endereço de faturamento da Nota Fiscal. <br> Recebedor alternativo só deverá ser preenchido como "SIM", se a conta bancária do recebedor tiver um CNPJ diferente do que está sendo cadastrado. Neste caso, você fornecedor irá preencher uma planilha com os dados do CNPJ do recebedor. (Esta situação acontece em casos de Matriz e Filial). <br><br> Você fornecedor, deverá informar o nome do banco de recebimento. No campo chave do banco, deverá ser preenchido conforme instruções que constam no quadro azul. Obs: O número do banco pode ser facilmente encontrado com uma busca na internet e deve conter 4 digitos, caso o número do seu banco contenha apenas 3 números. Adicione o número 0 no final. <strong> O número de agencia deve conter 4 números e não incluir dígitos. </strong> (Ex: Banco XXXX / Agencia XXXX). <br><br> Digite <strong>"Finalizar"</strong> para acessarmos a ultima etapa.';
+  } else if (userMessage.includes('Finalizar') || userMessage.includes('finalizar')) {
+    botMessage = '<strong>Dados Bancários</strong> <br><br> Marque o campo como "SIM", se você certificar que esse banco receberá pagamentos somente da Kohler Brasil. <br> Para finalizar nosso cadastro! <br> Se você selecionou a forma de pagamento como boleto, não precisa anexar o documento de validação de conta. Caso contrário, é necessário anexar um documento de validação de conta bancária. Deverá ser uns dos documentos aceitos, descritos no quadro azul. Após preencher todas informações exigidas acima, clicar no campo "Submeter". <br><br> 1. Concluído <br> 2. Não conclúido';
+  } else if (userMessage.includes('Concluido') || userMessage.includes('concluido')) {
+    botMessage = '<strong>Parabéns, você preencheu todos os seus dados. </strong> <br><br> Agora, irá passar por análise e aprovação do setor financeiro da Kohler Brasil. Caso tenha algum dado errado, você será notificado via e-mail. <br> Após a aprovação do financeiro, seu cadastro está finalizado. <br><br> O NÃO PREENCHIMENTO CONFORME INSTRUÇÕES, RESULTARÁ NA REJEIÇÃO DO CADASTRO ONDE VOCÊ TERÁ QUE PREENCHER OS DADOS NOVAMENTE. ATENTE-SE!';
+  } else if (userMessage.includes('Geral') || userMessage.includes('geral')) {
+    botMessage = '<strong>Informação Geral</strong> <br><br> Nesta etapa, temos termos sobre: <br><br> - Termos gerais de conduta <br> - Termos e condições da Kohler <br> - Manual da qualidade do fornecedor global <br><br> Leia todos os termos e manuais e se estiver de acordo, clique em "SIM", caso contrário, clique em "NÃO". <br><br> Digite "5" para retornar ao Menu';
+  } else if (userMessage.includes('Imposto') || userMessage.includes('imposto')) {
+    botMessage = '<strong>Informações de Impostos</strong> <br><br> Nesta seção, solicitamos que você preencha as informações fiscais da sua empresa. Certifique-se de preencher com o máximo de precisão. Obs: Dados incorretos podem atrasar o processo de integração ou afetar negativamente nossa capacidade de executar pagamentos. (Não inserir símbolos nos como CNPJ, Inscrição Estadual e Inscrição Municipal, os quais não são permitidos. <br><br> Digite "5" para retornar ao Menu principal.';
+  } else if (userMessage.includes('Negócios') || userMessage.includes('negócios') || userMessage.includes('Negocios') || userMessage.includes('negocios')) {
+    botMessage = '<strong>Informações de Negócios</strong> <br><br> Na aba negócios você preencherá alguns dados referente ao registro da sua empresa. Coloque no campo qual é o dado de registro da empresa/negócio? Você precisa colocar neste campo a data do CNPJ que está sendo cadastrado, foi aberto. (Quando foi aberto a empresa). <br><br> Digite <strong>"OK"</strong> para continuar!';
+  } else if (userMessage.includes('OK') || userMessage.includes('ok')) {
+    botMessage = '<strong>Informações de Negócios</strong> <br><br> Após "Salvar" e "Publicar" o perfil da sua empresa, a equipe de compras da Kohler irá revisar e aprovar o perfil de sua empresa. Caso sejam necessárias informações adicionais, você será contratado por e-mail pelo Departamento de Compras Globais da Kohler no-reply@app11.jaggaer.com ou equipe de compras da Kohler entrará em contato com você.';
+  } else if (userMessage.includes('Certificações') || userMessage.includes('certificações')) {
+    botMessage = '<strong>Informações de Certificações</strong> <br><br> Na aba de certificações você preencherá alguns dados referente a certificados existentes em seu CNPJ. Tais como: ISO 9001, NR35, entre outras correlatas a sua atividade.<br><br> Digite "5" para retornar ao Menu Inicial';
+  } else if (userMessage.includes('Idioma') || userMessage.includes('idioma')) {
+    botMessage = '<strong>Sobre Idiomas</strong> <br><br> Para iniciar seu registro, selecione o idioma de sua preferência clicando na caixa desejada (Ex. Portuguese). <br><br> Digite "5" para retornar ao Menu Inicial';
+  } else if (userMessage.includes('Informações Gerais') || userMessage.includes('informações gerais')) {
+    botMessage = '<strong>Sobre Informações Gerais</strong> <br><br> As informações gerais serão usadas pela equipe da Kohler para contatá-lo sobre atualizações do sistema ou dúvidas. <br> No campo Nome de Usuário, você deve criar um nome de usuário exclusivo que será usado para fazer o login na plataforma. <br><br> Dica: O nome de usuário deve ser único na plataforma, deve ser preenchido como se fosse um instagram. Nome sem espaço e único. <br><br> Digite "5" para retornar ao Menu Inicial';
+  } else if (userMessage.includes('Aba empresa') || userMessage.includes('aba empresa')) {
+    botMessage = '<strong>Sobre Aba Empresa</strong> <br><br> Na aba empresa, você preencherá o fomulário com as informações da sua empresa. Se o nome legal da sua empresa exceder 35 caracteres, use o campo Razão social 2. <br> Se o endereço da rua exceder 35 caracteres, use "Rua 2" para os caracteres restantes <br> Nos campos D-U-N-S e EORI, preencha apenas as que se referem a sua empresa. <br> Dica: Preencher somente os dados obrigatórios, marcados com ASTERÍSCO, pois, há dados que são exclusivos para outros países. <br><br> Digite "5" para retornar ao Menu Principal.';
+  } else if (userMessage.includes('Termos') || userMessage.includes('termos')) {
+    botMessage = '<strong>Sobre os Termos</strong> <br><br> Leia e concorde com os termos da plataforma. Após aceitar os termos, você poderá encontrar a seguinte mensagem de erro: "Login name already taken". Obs: Caso encontrar esta mensagem de erro, clique no botão voltar à primeira página e altere seu login name na parte inferior da página. Este erro significa que alguém já está usando este nome de usuário específico. <br><br> Digite "5" para retornar ao Menu Principal.';
+  } else {
+    botMessage = 'Desculpe, não entendi. Poderia repetir de outra forma?';
+  }
+  return botMessage;
+}
+
+userInput.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    processUserInput();
+  }
+}); 
+  </script>
 </body>
 </html>
